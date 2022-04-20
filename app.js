@@ -285,7 +285,7 @@ function getData () {
 
                 var newListItem = document.createElement('li')
                 newListItem.value = item["name"]
-                newListItem.innerHTML = item["name"] + " " + item["servingSize"]
+                newListItem.innerHTML = item["name"] + " " + item["servingsize"]
                 newListItem.classList.add("list-items")
 
                 //make add item button for each item
@@ -317,7 +317,7 @@ function getData () {
                         modal.style.display = "block"
                         itemId = item.id
                         document.querySelector('#edit-item-name-val').value = item["name"]
-                        document.querySelector('#edit-item-servings-val').value = item["servingSize"]
+                        document.querySelector('#edit-item-servings-val').value = item["servingsize"]
                         document.querySelector('#edit-item-calories-val').value = item["calories"]
                         document.querySelector('#edit-item-protein-val').value = item["protein"]
                         document.querySelector('#edit-item-fat-val').value = item["fat"]
