@@ -10,8 +10,9 @@
             //show login/register, hide normal stuff
             //when user logs in start from top call function to load resource
 
-const BASE_URL = "https://calorietrackergarrett.herokuapp.com/"
+const BASE_URL = "https://garrettcalorietracker.herokuapp.com/"
                  //http://localhost:8080/
+                 //
 var itemList = []
 //values
 var calsConst = 0
