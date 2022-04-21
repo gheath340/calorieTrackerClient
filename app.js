@@ -1,4 +1,4 @@
-        //figure out how to add the cals and macros of the day to data
+     //figure out how to add the cals and macros of the day to data
 //and press button to start new day
 
 
@@ -110,7 +110,7 @@ function login (email, password) {
             'Content-Type': 'application/x-www-form-urlencoded'
         }
     }).then(function (response) {
-        if (response.status == 404) {
+        if (response.status == 401) {
             alert("Incorrect email or password")
         }else if (response.status == 201) {
             document.getElementById("loginDiv").style.display = "none"
@@ -255,7 +255,7 @@ function updateItem (itemName, servingSize, calories, protein, fat, carbs, id) {
 //data has 1 top list consisting of 2 lists, list[0] represents all existing items and list[1] represents items eaten today
 function getData () {
     fetch(BASE_URL + "foods", {credentials: "include"}).then(function (response) {
-        if (response.status == 401) {
+        if (response.status == 40) {
             //hide data ui
             //show login or register
             document.getElementById("mainDiv").style.display = "none"
