@@ -255,7 +255,7 @@ function updateItem (itemName, servingSize, calories, protein, fat, carbs, id) {
 //data has 1 top list consisting of 2 lists, list[0] represents all existing items and list[1] represents items eaten today
 function getData () {
     fetch(BASE_URL + "foods", {credentials: "include"}).then(function (response) {
-        if (response.status == 40) {
+        if (response.status == 401) {
             //hide data ui
             //show login or register
             document.getElementById("mainDiv").style.display = "none"
