@@ -54,7 +54,7 @@ select:hover {
 }
 
 #add-food-h2 {
-    position: absolute;
+    position: relative;
     left: 25%;
     top: 18%;
 }
@@ -96,7 +96,7 @@ select:hover {
 #add-existing-button {
     position: absolute;
     left: 42%;
-    top: 30%;
+    top: 200%;
 }
 
 #new-item-text {
