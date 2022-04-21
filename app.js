@@ -112,6 +112,7 @@ function login (email, password) {
     }).then(function (response) {
         if (response.status == 401) {
             alert("Incorrect email or password")
+            return
         }else if (response.status == 201) {
             document.getElementById("loginDiv").style.display = "none"
             document.getElementById("mainDiv").style.display = "block"
