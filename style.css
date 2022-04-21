@@ -77,7 +77,7 @@ select:hover {
 }
 
 #servings-eaten {
-    position: absolute;
+    position: relative;
     left: 35%;
     top: 25%;
 }
